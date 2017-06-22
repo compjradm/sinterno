@@ -1,0 +1,62 @@
+html{
+  font-size: 18px;
+
+}
+body{
+  background-color: rgb(142, 68, 145);
+  background-repeat: repeat;
+}
+p, a{
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 1.3rem;
+  color: rgb(66, 33, 79);
+  text-align: center;
+}
+h1{
+  font-family: "BigNoodleTitling", sans-serif;
+  font-size: 3.4rem;
+  color: rgb(142, 68, 145);
+}
+
+.section{
+  display: block;
+  background-color: white;
+  background-position: center;
+  margin: auto;
+  padding: 10px;
+  width: 90%
+}
+
+.img_container{
+  display: inline-block;
+  padding: 10px;
+}
+.section_img_container{
+  display: block;
+  background-position: center;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+}
+
+@media (max-width:499px) {
+
+  .img_thumb{
+    width: 70px;
+  }
+  .section_img_container{
+    height: 1px;
+    visibility: hidden;
+  }
+}
+@media (min-width:500px){
+  .section, .section_img_container{
+    max-width: 720px;
+    min-width: 480px;
+  }
+}
+@media (min-width:800px){
+  .section, .section_img_container{
+    max-width: 768px;
+  }
+}
