@@ -1,0 +1,103 @@
+html{
+  font-size: 18px;
+
+}
+body{
+  background-color: rgb(142, 68, 145);
+  background-repeat: repeat;
+}
+p, a, .section > ul{
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 1.3rem;
+  color: rgb(66, 33, 79);
+  text-align: center;
+}
+h1{
+  font-family: "BigNoodleTitling", sans-serif;
+  font-size: 3.4rem;
+  color: rgb(142, 68, 145);
+}
+h2{
+  font-family: "BigNoodleTitling", sans-serif;
+  font-size: 2.75rem;
+  color: rgb(101, 65, 152);
+  text-align: left;
+}
+iframe{
+  width: 100%;
+  border-style: none;
+  height: 580px;
+  scrolling: no;
+}
+
+.section{
+  display: block;
+  background-color: white;
+  background-position: center;
+  margin: auto;
+  padding: 10px;
+  width: 90%
+}
+
+.img_container{
+  display: inline-block;
+  padding: 10px;
+}
+.section_img_container{
+  display: block;
+  background-position: center;
+  margin: auto;
+  /*padding: 10px;*/
+  overflow: hidden;
+  max-height: 350px;
+}
+.section_img{
+  width: 800px;
+}
+.img_gallery_center{
+  margin: auto;
+}
+.img_gallery_left{
+  display: block;
+  float: left;
+  margin-right: 1%;
+  clear: left;
+}
+
+.img_gallery_right{
+  display: block;
+  float: right;
+  margin-left: 1%;
+  clear:right;
+}
+
+#Lvalores{
+  text-align: left;
+  list-style-type: none;
+}
+
+@media (max-width:499px) {
+  iframe{
+    height: 800px;
+  }
+
+  .img_thumb{
+    width: 70px;
+  }
+  .hide_mobile{
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+  }
+}
+@media (min-width:500px){
+  .section, .section_img_container{
+    max-width: 720px;
+    min-width: 480px;
+  }
+}
+@media (min-width:800px){
+  .section, .section_img_container{
+    max-width: 768px;
+    }
+}
